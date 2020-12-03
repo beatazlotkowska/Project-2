@@ -1,0 +1,100 @@
+/* Variables */
+/*Global*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background: #fff;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Open Sans", sans-serif;
+}
+
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url("https://i.postimg.cc/J7GQcdY9/header.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash-inner {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.page-title::after {
+  position: absolute;
+  content: '';
+  bottom: -24px;
+  left: 50%;
+  width: 100px;
+  height: 10px;
+  transform: translateX(-50%);
+}
+
+.page-subtitle {
+  color: #fff;
+  font-size: 70px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+/*button*/
+button {
+  display: inline-block;
+  background: #fed136;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  border: none;
+  font-size: 1.5em;
+  padding: 20px 40px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #fff;
+  color: #fed136;
+  cursor: pointer;
+}
+
+/* Navigation */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
