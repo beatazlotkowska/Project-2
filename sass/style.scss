@@ -57,6 +57,11 @@ padding-bottom: 48px;
 
 
 header{
+    .logo{
+        margin-top:10px;
+        float:left;
+    }
+
     .splash-inner {
         margin-top:20vh;
         text-align: center;
@@ -98,27 +103,51 @@ header{
         cursor: pointer;
     }
 }
+@media (max-width: 767px) {
+    header{
+        .splash-inner {
+            margin-top:20vh;
+        }
+        .page-title {
+            padding: 5px;
+            font-size: 48px;
+        }
+        .page-subtitle {
+            font-size: 56px;
+            padding-bottom: 20px;
+        }
+        button {
+            font-size: 1em;
+            padding: 6px 20px;            
+        } 
+    }
+
+}
+
+
 
 /* Navigation */
 nav{
     //height: 80px;
     //padding-top: 24px;
 
-    .logo{
-        float:left;
-        padding: 14px;
+    .mobile {
+        display: none;
+
     }
+
     ul{
         list-style: none;
         float: right;
         
         li{
             display: inline-block;
-            padding: 12px 12px;
 
             a{
+                padding: 12px 12px;
                 color: $color-text;
                 font-size: 14px;
+                display: block;
 
 
                 &:hover{
@@ -131,9 +160,54 @@ nav{
 
 }
 
+@media (max-width: 767px) {
+    nav{
+        &:hover{
+            position: relative;
+            ul{
+                padding:0;
+                display: block;
+                position: absolute;
+                z-index: 10;
+                top:47px;
+                right:0;
+                background: black;
+                li{
+                    display:block;
+                    border-bottom: 1px solid #1f1f1f;
+                   
+                    a{ 
+                        display:block;
+                        padding: 12px 24px;
+
+                    }
+
+                }
+           } 
+        }
+
+        .mobile {
+            margin-top:14px;
+            background: $color-button;
+            border-radius: 3px;
+            padding: 3px 20px;
+            display: block;
+            float: right;
+        }
+
+        ul{
+            display: none;
+        }     
+    }
+
+
+
+}
+
 .services{
     h1{
         text-align: center;
+        font-weight: bold;
     }
     h2{
         text-align: center;
@@ -156,6 +230,7 @@ nav{
         text-align: center;
         margin-top: 24px;
         font-size: 20px;
+        font-weight: bold;
     }
 
     .description {
@@ -177,6 +252,7 @@ nav{
 
     h1 {
         text-align: center;
+        font-weight: bold;
     }
     h2 {
         text-align: center;
@@ -202,6 +278,7 @@ nav{
                 font-size: 16px;
                 padding: 24px 3px 1px 3px;
                 line-height: 1;
+                font-weight: bold;
             }
             .subtitle {
                 font-size: 14px;
@@ -272,4 +349,10 @@ footer {
     }
 
 }
+
+/* Media */
+
+
+
+
 

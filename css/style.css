@@ -32,6 +32,11 @@ section {
 }
 
 /*button*/
+header .logo {
+  margin-top: 10px;
+  float: left;
+}
+
 header .splash-inner {
   margin-top: 20vh;
   text-align: center;
@@ -73,10 +78,27 @@ header button:hover {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  header .splash-inner {
+    margin-top: 20vh;
+  }
+  header .page-title {
+    padding: 5px;
+    font-size: 48px;
+  }
+  header .page-subtitle {
+    font-size: 56px;
+    padding-bottom: 20px;
+  }
+  header button {
+    font-size: 1em;
+    padding: 6px 20px;
+  }
+}
+
 /* Navigation */
-nav .logo {
-  float: left;
-  padding: 14px;
+nav .mobile {
+  display: none;
 }
 
 nav ul {
@@ -86,17 +108,52 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding: 12px 12px;
 }
 
 nav ul li a {
+  padding: 12px 12px;
   color: #fff;
   font-size: 14px;
+  display: block;
 }
 
 nav ul li a:hover {
   color: #fed136;
   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  nav:hover {
+    position: relative;
+  }
+  nav:hover ul {
+    padding: 0;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 47px;
+    right: 0;
+    background: black;
+  }
+  nav:hover ul li {
+    display: block;
+    border-bottom: 1px solid #1f1f1f;
+  }
+  nav:hover ul li a {
+    display: block;
+    padding: 12px 24px;
+  }
+  nav .mobile {
+    margin-top: 14px;
+    background: #fed136;
+    border-radius: 3px;
+    padding: 3px 20px;
+    display: block;
+    float: right;
+  }
+  nav ul {
+    display: none;
+  }
 }
 
 .services {
@@ -105,6 +162,7 @@ nav ul li a:hover {
 
 .services h1 {
   text-align: center;
+  font-weight: bold;
 }
 
 .services h2 {
@@ -127,6 +185,7 @@ nav ul li a:hover {
   text-align: center;
   margin-top: 24px;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .services .description {
@@ -142,6 +201,7 @@ nav ul li a:hover {
 
 .portfolio h1 {
   text-align: center;
+  font-weight: bold;
 }
 
 .portfolio h2 {
@@ -164,6 +224,7 @@ nav ul li a:hover {
   font-size: 16px;
   padding: 24px 3px 1px 3px;
   line-height: 1;
+  font-weight: bold;
 }
 
 .portfolio .box .description .subtitle {
@@ -222,5 +283,7 @@ footer .icons i:hover {
   transition: 0.5s;
   background: #fed136;
 }
+
+/* Media */
 
 /*# sourceMappingURL=style.css.map */
