@@ -179,6 +179,13 @@ nav ul li a:hover {
 .services .icons i {
   font-size: 60px;
   color: #fed136;
+  font-size: 60px;
+  color: #fed136;
+  padding: 17px 0;
+  border: 5px solid #fed136;
+  border-radius: 123px;
+  height: 110px;
+  width: 110px;
 }
 
 .services .title {
@@ -283,7 +290,5 @@ footer .icons i:hover {
   transition: 0.5s;
   background: #fed136;
 }
-
-/* Media */
 
 /*# sourceMappingURL=style.css.map */

@@ -38,23 +38,9 @@ padding-bottom: 48px;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-
-
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-
 }
 
-
-
-
-
-
-
 /*button*/
-
-
 
 header{
     .logo{
@@ -104,6 +90,7 @@ header{
     }
 }
 @media (max-width: 767px) {
+
     header{
         .splash-inner {
             margin-top:20vh;
@@ -125,11 +112,8 @@ header{
 }
 
 
-
 /* Navigation */
-nav{
-    //height: 80px;
-    //padding-top: 24px;
+nav {
 
     .mobile {
         display: none;
@@ -223,6 +207,14 @@ nav{
         i {
             font-size: 60px;
             color: $color-button;
+            font-size: 60px;
+            color: #fed136;
+            padding: 17px 0;
+            border: 5px solid #fed136;
+            border-radius: 123px;
+            height: 110px;
+            width: 110px;
+
 
         }
     }
@@ -242,9 +234,6 @@ nav{
     }
 
 }
-
- 
-
 
 .portfolio{
     color: #000;
@@ -291,7 +280,6 @@ nav{
         }
     }
 }
-
 
 
 /*Icons*/
@@ -349,10 +337,3 @@ footer {
     }
 
 }
-
-/* Media */
-
-
-
-
-
