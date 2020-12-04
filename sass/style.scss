@@ -4,6 +4,8 @@ $color-text: #fff;
 $font-text:'Open Sans', sans-serif;
 $font-header:'Poppins', sans-serif;
 $transition: all 1s;
+$background-cutscene: #f7f7f7;
+
 
 /*Global*/
 
@@ -12,14 +14,15 @@ $transition: all 1s;
 }
 body {
     margin: 0;
-    text-align: center;
     background: #fff;
     color: $color-text;
     font-size: 16px;
     line-height: 1.7;
     font-family: $font-text
 }
-
+.clearfix{
+    clear: both;
+}
 
 .splash {
     height: 100vh;
@@ -28,81 +31,131 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-}
 
- .splash-inner {
-    position: relative;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
 }
 
 
-.page-title {
-    position: absolute;
-    font-family: $font-text;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    text-align: center;
-    color: $color-text;
-    font-size: 40px;
-    font-style: italic;
-}
-.page-title::after {
-    position: absolute;
-    content: '';
-    bottom: -24px;
-    left: 50%;
-    width: 100px;
-    height: 10px;
-    transform: translateX(-50%);
-}
-.page-subtitle {
-    color: $color-text;
-    font-size: 70px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
-    font-weight: bold;
-    padding-bottom: 40px;
-}
+
+
+
 
 
 /*button*/
 
 
-button {
-    display: inline-block;
-    background: $color-button;
-    font-family: $font-text;
-    color: $color-text;
-    border: none;
-    font-size: 1.5em;
-    padding: 20px 40px;
-    border-radius: 4px;
-    
-}
-button:hover {
-    background: $color-text;
-    color: $color-button;
-    cursor: pointer;
+
+header{
+    .splash-inner {
+        margin-top:20vh;
+        text-align: center;
+
+       
+    }
+    .page-title {
+        font-family: $font-text;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        text-align: center;
+        color: $color-text;
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    .page-subtitle {
+        color: $color-text;
+        font-size: 40px;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+        font-weight: bold;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    button {
+        display: inline-block;
+        background: $color-button;
+        font-family: $font-text;
+        color: $color-text;
+        border: none;
+        font-size: 1.3em;
+        padding: 12px 40px;
+        border-radius: 3px;
+        
+    }
+    button:hover {
+        background: $color-text;
+        color: $color-button;
+        cursor: pointer;
+    }
 }
 
 /* Navigation */
-.container {
-  position: absolute;
-  margin: 20px;
-  width: auto;
-}
-.topnav {
-}
-.topnav a {
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+nav{
+    height: 80px;
+    .logo{
+        float:left;
+        padding: 14px;
+    }
+    ul{
+        list-style: none;
+        float: right;
+        
+        li{
+            display: inline-block;
+            padding: 12px 12px;
+
+            a{
+                color: $color-text;
+                font-size: 17px;
+
+                &:hover{
+                    color: $color-button;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
 }
 
-.topnav a:hover {
-  color: black;
+.services{
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    color: #000;
 }
+.portfolio{
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    color: #000;
+    background: $background-cutscene;
+
+    .box{
+        min-height: 150px;
+        background: red;
+    }
+}
+    // a {
+    //     float: left;
+    //     text-align: center;
+    //     padding: 14px 16px;
+    //     text-decoration: none;
+    //     font-size: 17px;
+
+    //     &:hover{
+    //      color: black;   
+    //     }
+    // }
+
+
+

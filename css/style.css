@@ -6,12 +6,15 @@
 
 body {
   margin: 0;
-  text-align: center;
   background: #fff;
   color: #fff;
   font-size: 16px;
   line-height: 1.7;
   font-family: "Open Sans", sans-serif;
+}
+
+.clearfix {
+  clear: both;
 }
 
 .splash {
@@ -23,16 +26,13 @@ body {
   background-attachment: fixed;
 }
 
-.splash-inner {
-  position: relative;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/*button*/
+header .splash-inner {
+  margin-top: 20vh;
+  text-align: center;
 }
 
-.page-title {
-  position: absolute;
+header .page-title {
   font-family: "Open Sans", sans-serif;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
   padding: 20px;
@@ -42,59 +42,90 @@ body {
   font-style: italic;
 }
 
-.page-title::after {
-  position: absolute;
-  content: '';
-  bottom: -24px;
-  left: 50%;
-  width: 100px;
-  height: 10px;
-  transform: translateX(-50%);
-}
-
-.page-subtitle {
+header .page-subtitle {
   color: #fff;
-  font-size: 70px;
+  font-size: 40px;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.8);
   font-weight: bold;
   padding-bottom: 40px;
+  text-align: center;
 }
 
-/*button*/
-button {
+header button {
   display: inline-block;
   background: #fed136;
   font-family: "Open Sans", sans-serif;
   color: #fff;
   border: none;
-  font-size: 1.5em;
-  padding: 20px 40px;
-  border-radius: 4px;
+  font-size: 1.3em;
+  padding: 12px 40px;
+  border-radius: 3px;
 }
 
-button:hover {
+header button:hover {
   background: #fff;
   color: #fed136;
   cursor: pointer;
 }
 
 /* Navigation */
-.container {
-  position: absolute;
-  margin: 20px;
-  width: auto;
+nav {
+  height: 80px;
 }
 
-.topnav a {
+nav .logo {
   float: left;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 14px;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 12px 12px;
+}
+
+nav ul li a {
+  color: #fff;
   font-size: 17px;
 }
 
-.topnav a:hover {
-  color: black;
+nav ul li a:hover {
+  color: #fed136;
+  text-decoration: none;
+}
+
+.services {
+  color: #000;
+}
+
+.services h1 {
+  text-align: center;
+}
+
+.services h2 {
+  text-align: center;
+}
+
+.portfolio {
+  color: #000;
+  background: #f7f7f7;
+}
+
+.portfolio h1 {
+  text-align: center;
+}
+
+.portfolio h2 {
+  text-align: center;
+}
+
+.portfolio .box {
+  min-height: 150px;
+  background: red;
 }
 
 /*# sourceMappingURL=style.css.map */
